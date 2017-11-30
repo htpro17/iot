@@ -1,5 +1,6 @@
 var net = require('net');
 var textChunk = '';
+
 var http = require('http');
 
 //create a server object:
@@ -20,4 +21,4 @@ var server = net.createServer(function(socket) {
 		console.log('Closed');
 	});
 });
-server.listen(process.env.PORT || 80, 'https://iot17.herokuapp.com/');
+server.listen(80, 'localhost');
