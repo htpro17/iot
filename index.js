@@ -6,7 +6,7 @@ var http = require('http');
 http.createServer(function (req, res) {
   res.write('Hello World!'); //write a response to the client
   res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
+}).listen(80); //the server object listens on port 8080
 
 var server = net.createServer(function(socket) {
 	socket.write('Echo server\r\n');
@@ -20,4 +20,4 @@ var server = net.createServer(function(socket) {
 		console.log('Closed');
 	});
 });
-server.listen(8080, '127.0.0.1');
+server.listen(80, '127.0.0.1');
