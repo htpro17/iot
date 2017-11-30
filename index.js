@@ -20,4 +20,4 @@ var server = net.createServer(function(socket) {
 		console.log('Closed');
 	});
 });
-server.listen(80, 'https://iot17.herokuapp.com/');
+server.listen(process.env.PORT || 80, 'https://iot17.herokuapp.com/');
